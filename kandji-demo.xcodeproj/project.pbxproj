@@ -14,6 +14,13 @@
 		F651874626FD4CAE009CDF69 /* kandji_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651874526FD4CAE009CDF69 /* kandji_demoTests.swift */; };
 		F651875026FD4CAE009CDF69 /* kandji_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651874F26FD4CAE009CDF69 /* kandji_demoUITests.swift */; };
 		F651875226FD4CAE009CDF69 /* kandji_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651875126FD4CAE009CDF69 /* kandji_demoUITestsLaunchTests.swift */; };
+		F651876D26FD4CC2009CDF69 /* filexpc.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = F651876226FD4CC2009CDF69 /* filexpc.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6518784270287C8009CDF69 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6518782270287C8009CDF69 /* main.swift */; };
+		F65187862702885D009CDF69 /* XpcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651877E27028616009CDF69 /* XpcProtocol.swift */; };
+		F65187892702890A009CDF69 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F651876A26FD4CC2009CDF69 /* Info.plist */; };
+		F651878A2702895F009CDF69 /* XpcProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651877E27028616009CDF69 /* XpcProtocol.swift */; };
+		F651878C2702917F009CDF69 /* XpcProtocolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651878B2702917F009CDF69 /* XpcProtocolClass.swift */; };
+		F651878D2702917F009CDF69 /* XpcProtocolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F651878B2702917F009CDF69 /* XpcProtocolClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,28 @@
 			remoteGlobalIDString = F651872F26FD4CAB009CDF69;
 			remoteInfo = "kandji-demo";
 		};
+		F651876B26FD4CC2009CDF69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F651872826FD4CAB009CDF69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F651876126FD4CC2009CDF69;
+			remoteInfo = xpc;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F651877126FD4CC2009CDF69 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				F651876D26FD4CC2009CDF69 /* filexpc.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F651873026FD4CAB009CDF69 /* kandji-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kandji-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +73,12 @@
 		F651874B26FD4CAE009CDF69 /* kandji-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kandji-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F651874F26FD4CAE009CDF69 /* kandji_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kandji_demoUITests.swift; sourceTree = "<group>"; };
 		F651875126FD4CAE009CDF69 /* kandji_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kandji_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F651876226FD4CC2009CDF69 /* filexpc.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = filexpc.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		F651876A26FD4CC2009CDF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F651877E27028616009CDF69 /* XpcProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpcProtocol.swift; sourceTree = "<group>"; };
+		F6518782270287C8009CDF69 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F651878B2702917F009CDF69 /* XpcProtocolClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XpcProtocolClass.swift; sourceTree = "<group>"; };
+		F651878E270292A5009CDF69 /* filexpc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = filexpc.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F651875F26FD4CC2009CDF69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +119,7 @@
 				F651873226FD4CAB009CDF69 /* kandji-demo */,
 				F651874426FD4CAE009CDF69 /* kandji-demoTests */,
 				F651874E26FD4CAE009CDF69 /* kandji-demoUITests */,
+				F651876326FD4CC2009CDF69 /* filexpc */,
 				F651873126FD4CAB009CDF69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +130,7 @@
 				F651873026FD4CAB009CDF69 /* kandji-demo.app */,
 				F651874126FD4CAE009CDF69 /* kandji-demoTests.xctest */,
 				F651874B26FD4CAE009CDF69 /* kandji-demoUITests.xctest */,
+				F651876226FD4CC2009CDF69 /* filexpc.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +172,18 @@
 			path = "kandji-demoUITests";
 			sourceTree = "<group>";
 		};
+		F651876326FD4CC2009CDF69 /* filexpc */ = {
+			isa = PBXGroup;
+			children = (
+				F651878E270292A5009CDF69 /* filexpc.entitlements */,
+				F651877E27028616009CDF69 /* XpcProtocol.swift */,
+				F6518782270287C8009CDF69 /* main.swift */,
+				F651878B2702917F009CDF69 /* XpcProtocolClass.swift */,
+				F651876A26FD4CC2009CDF69 /* Info.plist */,
+			);
+			path = filexpc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +194,12 @@
 				F651872C26FD4CAB009CDF69 /* Sources */,
 				F651872D26FD4CAB009CDF69 /* Frameworks */,
 				F651872E26FD4CAB009CDF69 /* Resources */,
+				F651877126FD4CC2009CDF69 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F651876C26FD4CC2009CDF69 /* PBXTargetDependency */,
 			);
 			name = "kandji-demo";
 			productName = "kandji-demo";
@@ -185,6 +242,23 @@
 			productReference = F651874B26FD4CAE009CDF69 /* kandji-demoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F651876126FD4CC2009CDF69 /* filexpc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F651876E26FD4CC2009CDF69 /* Build configuration list for PBXNativeTarget "filexpc" */;
+			buildPhases = (
+				F651875E26FD4CC2009CDF69 /* Sources */,
+				F651875F26FD4CC2009CDF69 /* Frameworks */,
+				F651876026FD4CC2009CDF69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = filexpc;
+			productName = xpc;
+			productReference = F651876226FD4CC2009CDF69 /* filexpc.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +280,10 @@
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = F651872F26FD4CAB009CDF69;
 					};
+					F651876126FD4CC2009CDF69 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
 				};
 			};
 			buildConfigurationList = F651872B26FD4CAB009CDF69 /* Build configuration list for PBXProject "kandji-demo" */;
@@ -224,6 +302,7 @@
 				F651872F26FD4CAB009CDF69 /* kandji-demo */,
 				F651874026FD4CAE009CDF69 /* kandji-demoTests */,
 				F651874A26FD4CAE009CDF69 /* kandji-demoUITests */,
+				F651876126FD4CC2009CDF69 /* filexpc */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +331,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F651876026FD4CC2009CDF69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65187892702890A009CDF69 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +346,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F651878C2702917F009CDF69 /* XpcProtocolClass.swift in Sources */,
+				F651878A2702895F009CDF69 /* XpcProtocol.swift in Sources */,
 				F651873626FD4CAB009CDF69 /* ContentView.swift in Sources */,
 				F651873426FD4CAB009CDF69 /* kandji_demoApp.swift in Sources */,
 			);
@@ -281,6 +370,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F651875E26FD4CC2009CDF69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6518784270287C8009CDF69 /* main.swift in Sources */,
+				F651878D2702917F009CDF69 /* XpcProtocolClass.swift in Sources */,
+				F65187862702885D009CDF69 /* XpcProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +392,11 @@
 			isa = PBXTargetDependency;
 			target = F651872F26FD4CAB009CDF69 /* kandji-demo */;
 			targetProxy = F651874C26FD4CAE009CDF69 /* PBXContainerItemProxy */;
+		};
+		F651876C26FD4CC2009CDF69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F651876126FD4CC2009CDF69 /* filexpc */;
+			targetProxy = F651876B26FD4CC2009CDF69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,9 +519,11 @@
 		F651875626FD4CAE009CDF69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "kandji-demo/kandji_demo.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -443,14 +549,16 @@
 		F651875726FD4CAE009CDF69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "kandji-demo/kandji_demo.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"kandji-demo/Preview Content\"";
-				DEVELOPMENT_TEAM = C6L3992RFB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -464,6 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.twodayslate.kandji-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -564,6 +673,63 @@
 			};
 			name = Release;
 		};
+		F651876F26FD4CC2009CDF69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = filexpc/filexpc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = filexpc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = filexpc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twodayslate.kandji-demo.filexpc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F651877026FD4CC2009CDF69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = filexpc/filexpc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C6L3992RFB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = filexpc/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = filexpc;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.twodayslate.kandji-demo.filexpc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +765,15 @@
 			buildConfigurations = (
 				F651875C26FD4CAE009CDF69 /* Debug */,
 				F651875D26FD4CAE009CDF69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F651876E26FD4CC2009CDF69 /* Build configuration list for PBXNativeTarget "filexpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F651876F26FD4CC2009CDF69 /* Debug */,
+				F651877026FD4CC2009CDF69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
