@@ -48,7 +48,7 @@ struct SidebarView: View {
     }
 }
 
-struct FileItem: Codable, Equatable, Identifiable {
+struct FileItem: CodablEquatable, Identifiable {
     var id: String {
         return self.path + self.cmd
     }
